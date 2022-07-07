@@ -8,10 +8,21 @@
     "node-html-to-image": "^3.2.4"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorPubh/tag-creator-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/VictorPubh/tag-creator-api/issues"
+  },
+  "homepage": "https://github.com/VictorPubh/tag-creator-api#readme",
+  "description": ""
 }
