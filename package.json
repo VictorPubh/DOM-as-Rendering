@@ -4,6 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "vercel dev",
+    "example": "node ./client/examples.js",
     "test": "jest -i"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "opn": "^6.0.0",
     "@types/jest": "^26.0.23",
     "jest": "^27.0.3",
     "supertest": "^6.1.3"

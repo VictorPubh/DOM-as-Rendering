@@ -102,6 +102,7 @@ Com isso você irá evitar que eles se transformem em "%20", o que torna um cara
 
 #### Próximos Passos
 
+- [x] Client (disponível em `./client`)
 - [ ] Testes unitários
 - [ ] Rodar na Vercel
 - [ ] Autenticação via API-key
