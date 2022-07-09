@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "74bf437c-b92a-4330-9b16-72cdcabd9431",
+		"name": "DOM as Rendering",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Label only with Icon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/custom/label.png?styles={\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}&text=Adicionar&trim=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"custom",
+						"label.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}"
+						},
+						{
+							"key": "text",
+							"value": "Adicionar"
+						},
+						{
+							"key": "trim",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Label with Shape",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/custom/label.png?styles=\n{\n    \"backgroundColor\": \"yellow\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"clip-path\": \"polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alignItems\": \"center\",\n    \"width\": \"200px\",\n    \"height\": \"200px\"\n}&text=ShapeCSS&trim=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"custom",
+						"label.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "\n{\n    \"backgroundColor\": \"yellow\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"clip-path\": \"polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alignItems\": \"center\",\n    \"width\": \"200px\",\n    \"height\": \"200px\"\n}"
+						},
+						{
+							"key": "text",
+							"value": "ShapeCSS"
+						},
+						{
+							"key": "trim",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Label only with Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/custom/label.png?styles={\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}&text=Adicionar&trim=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"custom",
+						"label.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}"
+						},
+						{
+							"key": "text",
+							"value": "Adicionar"
+						},
+						{
+							"key": "trim",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Label with Icon and Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/custom/label.png?styles={\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}&icon={\n    \"name\": \"add-Icon\",\n    \"size\": \"HD\",\n    \"styles\": {\n        \"width\": \"20px\"\n    }\n}&text=Adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"custom",
+						"label.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"fontSize\": \"Arial\",\n    \"padding\": \"10px 10px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\",\n    \"width\": \"min-content\"\n}"
+						},
+						{
+							"key": "icon",
+							"value": "{\n    \"name\": \"add-Icon\",\n    \"size\": \"HD\",\n    \"styles\": {\n        \"width\": \"20px\"\n    }\n}"
+						},
+						{
+							"key": "text",
+							"value": "Adicionar"
+						},
+						{
+							"key": "trim",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Labels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/custom/label.png?text=Variedades;12 Temporadas;Categorias&styles={\n    \"fontSize\": \"Arial\",\n    \"padding\": \"8px 15px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\"\n}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"custom",
+						"label.png"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Variedades;12 Temporadas;Categorias"
+						},
+						{
+							"key": "styles",
+							"value": "{\n    \"fontSize\": \"Arial\",\n    \"padding\": \"8px 15px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\"\n}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Icon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/icon/add-Icon.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"icon",
+						"add-Icon.png"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Variedades;12 Temporadas;Categorias",
+							"disabled": true
+						},
+						{
+							"key": "styles",
+							"value": "{\n    \"fontSize\": \"Arial\",\n    \"padding\": \"8px 15px\",\n    \"borderRadius\": \"5px\",\n    \"backgroundColor\": \"rgba(0, 0, 0, 0.1)\",\n    \"textAlign\": \"center\",\n    \"color\": \"black\",\n    \"gap\": \"6px\",\n    \"fontWeight\": 600,\n    \"letterSpacing\": \".065rem\",\n    \"display\": \"flex\",\n    \"justifyContent\": \"center\",\n    \"alginItems\": \"center\"\n}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Icon with Circle Background",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/icon/add-Icon.png?styles=\n{\n    \"backgroundColor\": \"rgba(30, 30, 30, .15)\",\n    \"borderRadius\": \"100px\",\n    \"padding\": \"10px\",\n    \"width\": \"min-content\"\n}&trim=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"icon",
+						"add-Icon.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "\n{\n    \"backgroundColor\": \"rgba(30, 30, 30, .15)\",\n    \"borderRadius\": \"100px\",\n    \"padding\": \"10px\",\n    \"width\": \"min-content\"\n}"
+						},
+						{
+							"key": "trim",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Icon with Size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/icon/add-Icon.png?styles={\n    \"width\": \"18px\",\n    \"height\": \"18px\"\n}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"icon",
+						"add-Icon.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"width\": \"18px\",\n    \"height\": \"18px\"\n}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image with Border Radius",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/image/cover.png?styles={\n    \"border-radius\": \"15px\",\n    \"width\": \"420px\"\n}&url=https://s2.glbimg.com/2PpdIhCenq2fmPtGRboKRpSoe1I=/0x720/https://s2.glbimg.com/OX9gD4u0b3nDQ6-m4GBKtUPpA0U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/5/A/EnKGzJRvyB8D8WTTnBmg/2021-2541-master-moley-background.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"image",
+						"cover.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"border-radius\": \"15px\",\n    \"width\": \"420px\"\n}"
+						},
+						{
+							"key": "url",
+							"value": "https://s2.glbimg.com/2PpdIhCenq2fmPtGRboKRpSoe1I=/0x720/https://s2.glbimg.com/OX9gD4u0b3nDQ6-m4GBKtUPpA0U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/5/A/EnKGzJRvyB8D8WTTnBmg/2021-2541-master-moley-background.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image with Shape",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/image/cover.png?styles={\n    \"clip-path\": \"polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)\",\n    \"object-fit\": \"cover\",\n    \"object-position\": \"100% 0\",\n    \"width\": \"150px\",\n    \"height\": \"150px\"\n}&url=https://s2.glbimg.com/2PpdIhCenq2fmPtGRboKRpSoe1I=/0x720/https://s2.glbimg.com/OX9gD4u0b3nDQ6-m4GBKtUPpA0U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/5/A/EnKGzJRvyB8D8WTTnBmg/2021-2541-master-moley-background.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"image",
+						"cover.png"
+					],
+					"query": [
+						{
+							"key": "styles",
+							"value": "{\n    \"clip-path\": \"polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)\",\n    \"object-fit\": \"cover\",\n    \"object-position\": \"100% 0\",\n    \"width\": \"150px\",\n    \"height\": \"150px\"\n}"
+						},
+						{
+							"key": "url",
+							"value": "https://s2.glbimg.com/2PpdIhCenq2fmPtGRboKRpSoe1I=/0x720/https://s2.glbimg.com/OX9gD4u0b3nDQ6-m4GBKtUPpA0U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2021/5/A/EnKGzJRvyB8D8WTTnBmg/2021-2541-master-moley-background.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

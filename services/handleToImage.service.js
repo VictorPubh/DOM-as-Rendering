@@ -45,8 +45,8 @@ const handleToImage = async (req, res, { html }) => {
         },
 
         'binary': (buffer) => {
-            res.writeHead(200, { 'Content-Type': 'image/png' })
-            res.end(buffer, 'binary')
+            res.writeHead(200, { 'Content-Type': 'image/png' });
+            res.end(buffer, 'binary');
         }
     }
 
