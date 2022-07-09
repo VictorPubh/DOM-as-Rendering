@@ -1,3 +1,7 @@
+# DOM as Rendering
+
+A API do DOMR tem como objetivo oferecer renderização de imagens a partir de padrões DOM, oferecendo infinitas possibilidades de estilo.
+
 ## Recursos Disponíveis
 
 #### Retorna um Elemento DOM como Imagem
@@ -112,3 +116,5 @@ Recomendamos que você remova todos os espaços da URL; Com isso você irá evit
 - [ ] Política Inteligente de Cacheamento
 - [ ] Estilos Pré-renderizados (Já embutidos na API)
 - [ ] Ícones como SVG, para facil manipulação de Cor
+
+Encontre exemplos de como usar a API (aqui)[https://github.com/VictorPubh/DOM-as-Rendering/blob/main/DOMR.postman_collection.json] via Postman.
