@@ -22,7 +22,9 @@ Note: Nessas duas ocasiões, criamos um elemento **label** e outro **button** co
 | `trim` | `boolean` | Recurso para recortar sobras de imagem (pixels transparentes). |
 | `enconding` | `"base64" (Padrão) ou "binary"` | Oferece diferentes formas de render. |
 | `icon` | `object` | Utiliza imagens alocadas nas pastas como ícone. |
+
 Um exemplo para o uso de Ícones:
+
 | Chave | Exemplo | Descrição |
 | :--------------- | :----------------------- | :------------------------------------------------------------ |
 | `icon['name']` | `add-Icon` | O nome de uma imagem existente em `/assets/{{size}}/` |
