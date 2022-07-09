@@ -1,5 +1,5 @@
 const opn = require('opn');
-const getImage = require("./services/get-image");
+const getImage = require(".");
 
 const custom = getImage({
     endpoint: "custom",
