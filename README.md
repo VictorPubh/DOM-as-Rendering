@@ -6,7 +6,7 @@ A API do DOMR tem como objetivo oferecer renderização de imagens a partir de p
 
 #### Retorna um Elemento DOM como Imagem
 
-```http
+```
   GET /custom/${tag_html}.png
 ```
 
@@ -52,7 +52,7 @@ _Obs: Em caso do uso de `text`como lista, o Elemento é replicado várias vezes 
 
 #### Retorna um Ícone
 
-```http
+```
   GET /icon/${image}.png
 ```
 
@@ -69,7 +69,7 @@ Exemplos:
 
 #### Retorna um Imagem customizada via CSS
 
-```http
+```
   GET /image/${cover}.png
 ```
 
@@ -117,4 +117,4 @@ Recomendamos que você remova todos os espaços da URL; Com isso você irá evit
 - [ ] Estilos Pré-renderizados (Já embutidos na API)
 - [ ] Ícones como SVG, para facil manipulação de Cor
 
-Encontre exemplos de como usar a API (aqui)[https://github.com/VictorPubh/DOM-as-Rendering/blob/main/DOMR.postman_collection.json] via Postman.
+Encontre exemplos de como usar a API [aqui](https://github.com/VictorPubh/DOM-as-Rendering/blob/main/DOMR.postman_collection.json) via Postman.
