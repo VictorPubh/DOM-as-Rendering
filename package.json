@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "main": "app.js",
   "scripts": {
-    "start": "vercel dev",
+    "start": "node app.js",
     "example": "node ./client/examples.js",
     "test": "jest -i"
   },
