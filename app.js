@@ -13,5 +13,8 @@ app.use('/', routes);
 app.use(express.static('assets'));
 
 app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('Route not defined')));
+app.listen(3000, () => {
+    console.log('Available on: http://localhost:3000')
+})
 
 module.exports = app;
