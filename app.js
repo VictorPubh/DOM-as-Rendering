@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use(helmet());
 app.use('/', routes);
 
-app.use(express.static('assets'));
+app.use(express.static(__dirname + '/assets'));
 
 app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('Route not defined')));
 app.listen(process.env.PORT || PORT, () => {

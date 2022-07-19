@@ -6,6 +6,8 @@ const createElement = (element = "div", text = "", styles, gap = 4, icon) => {
         return createImageWithStyle({ image: icon.base64, styles: icon.styles })
     }
 
+    text = decodeURIComponent(text)
+
     if (text.includes(";")) {
         text = text.split(";")
 

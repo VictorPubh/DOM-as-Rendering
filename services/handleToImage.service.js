@@ -31,7 +31,12 @@ const trimSharp = async (input) => {
 
 const handleToImage = async (req, res, { html }) => {
     const { trim } = req.query
+    
+    req.setEncoding('utf8');
 
+    html = `<link rel="stylesheet" type="text/css" herf="styles/global.css" />` + html
+
+    const quality = req.query.quality ? req.query.quality : 90
     const encondig = req.query.encoding ? req.query.encoding : "base64"
     const econdingHandle = {
         'base64': (buffer) => {
@@ -53,6 +58,7 @@ const handleToImage = async (req, res, { html }) => {
     const buffer = await nodeHtmlToImage({
         html,
         encondig,
+        quality,
         transparent: true
     })
 
