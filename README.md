@@ -16,7 +16,7 @@ Note: Nessas duas ocasiões, criamos um elemento **label** e outro **button** co
 
 | Parâmetro | Tipo | Descrição |
 | :---------- | :------------------------------ | :--------------------------------------------------------------------- |
-| `tag_html` | `string` | **Obrigatório**. Toda e qualquer tag HTML. |
+| `tag` | `string` | **Obrigatório**. Toda e qualquer tag HTML. |
 | `styles` | `object` | Toda e qualquer propriedade CSS (em camelCase ou não). |
 | `text` | `string` | O texto conteúdo da sua Tag, podendo ser listas: Alpha;Brasil;Churasco |
 | `trim` | `boolean` | Recurso para recortar sobras de imagem (pixels transparentes). |
@@ -84,6 +84,7 @@ Em todos os endpoints os mesmos recursos estão disponíveis:
 | `styles` | `object` | Toda e qualquer propriedade CSS (em camelCase ou não). |
 | `trim` | `boolean` | Recurso para recortar sobras de imagem (pixels transparentes). |
 | `enconding` | `"base64" (Padrão) ou "binary"` | Oferece diferentes formas de render. |
+| `quality` | `10 ~ 100`| Define a qualidade do render (influencia na velocidade de resposta) |
 
 #### Limitações
 
