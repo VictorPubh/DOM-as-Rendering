@@ -15,6 +15,6 @@ module.exports = async (req, res, next) => {
         icon.base64 = await getImageAssets(icon.size, icon.name)
     }
 
-    const html = createElement(element, text, JSON.parse(styles), gap, icon)
+    const html = createElement(element, text, styles, gap, icon)
     handleToImage(req, res, { html })
 }
