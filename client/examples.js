@@ -81,4 +81,4 @@ const image = getImage({
     }
 })
 
-opn(image);
+opn(icon);

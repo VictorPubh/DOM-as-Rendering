@@ -59,6 +59,9 @@ const handleToImage = async (req, res, { html }) => {
         html,
         encondig,
         quality,
+        puppeteerArgs: {
+            args: ['--no-sandbox']
+        },
         transparent: true
     })
 
