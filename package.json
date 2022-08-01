@@ -4,10 +4,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js",
     "example": "node ./client/examples.js",
     "test": "jest -i"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "jimp": "^0.16.1",
